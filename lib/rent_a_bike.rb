@@ -1,8 +1,6 @@
 require 'dm-core'
 require 'dm-migrations'
 
-DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/development.db")
-
 class UserData
     include DataMapper::Resource
     property :id, Serial
@@ -107,4 +105,3 @@ def return_working_bikes(username = "MAINTENANCE", dock = "DOCKINGSTATION")
         @bikes.update(:assigned_to => dock)
     end
 end
-
