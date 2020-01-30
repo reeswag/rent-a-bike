@@ -108,4 +108,3 @@ def return_working_bikes(username = "MAINTENANCE", dock = "DOCKINGSTATION")
     end
 end
 
-DataMapper.finalize
