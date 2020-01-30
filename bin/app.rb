@@ -22,6 +22,7 @@ DataMapper.finalize
 get('/styles.css'){ scss :styles }
 
 get '/reset' do
+    halt(401,'Not Authorized') unless session[:username] == "MAINTENANCE"
     factory_reset
     redirect to('/')
 end
