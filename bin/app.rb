@@ -106,6 +106,14 @@ post '/' do
     end
 end
 
+get '/about' do
+    erb :about
+end
+
+get '/contact' do
+    erb :contact
+end
+
 get '/user' do
     unless session[:user]
         puts "User Does Not Exist"
