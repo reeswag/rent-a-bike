@@ -2,8 +2,8 @@ $red: #903;
 $black: #444;
 $white: #fff;
 $main-font: Helvetica, Arial, sans-serif;
-$large-font: 32px/1 $main-font;
-$small-font: 20px/1 $main-font;
+$large-font: 20px/1 $main-font;
+$small-font: 14px/1 $main-font;
 
 @mixin tabs ($background: blue, $color: yellow) {
   ul {
@@ -40,7 +40,7 @@ body {
   }
   header {
     h1 {
-      font-size: 40px;
+      font-size: 32px;
       line-height: 80px;
       background: transparent url(/images/logo.png) 0 0 no-repeat;
       padding-left: 84px;
