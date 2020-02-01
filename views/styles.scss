@@ -50,6 +50,10 @@ body {
       font-weight: bold;
       font: $large-font;
     }
+
+    nav a.current {
+      background: lighten($black, 20%)
+    }
   }
   ul {
     li {
