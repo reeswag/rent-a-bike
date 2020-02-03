@@ -196,7 +196,7 @@ get '/maintenance' do
             @message << "\tBike #{index.to_s}: #{x.condition}\n"
         end
     end
-    erb:maintenance, {:locals => {:maintenance => session[:user], :message => @message, :error => @error, :bike_count => session[:user].bike_count}}
+    erb:maintenance, {:locals => {:maintenance => session[:user], :message => @message, :error => @error, :bike_count => session[:user].bike_count}, :layout => :layout_maintenance}
 end
 
 post '/maintenance' do
